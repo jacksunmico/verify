@@ -1,0 +1,16 @@
+{
+    "name": "jacksunmico/verify",
+    "description": "composer demo1",
+    "autoload": {
+        "psr-4": {
+            "Jacksunmico\\Verify\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "jacksunmico",
+            "email": "jacksunmico@sina.com"
+        }
+    ],
+    "require": {}
+}
