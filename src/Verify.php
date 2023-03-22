@@ -1,6 +1,6 @@
 <?php
 
-namespace   Jacksunmico;//要与composer.json   "Jacksunmico\\":"src/"  对应
+namespace Jacksunmico;//要与composer.json   "Jacksunmico\\":"src/"  对应
 
 /**
  * 校验工具类，如验证ip、手机、邮箱等等
@@ -32,7 +32,7 @@ class Verify
 
 
     // 说明： 验证邮箱格式
-    function isValidEmail($email)
+    public function isValidEmail($email)
     {
         $check = false;
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -40,12 +40,6 @@ class Verify
         }
         return $check;
     }
-    /**
-    $email = "blog@koonk.com";
-    $check = is_validemail($email);
-    echo $check;
-    //If the output is 1, then email is valid.
-     */
 
 
     /**

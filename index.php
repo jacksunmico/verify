@@ -1,11 +1,11 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Jacksunmico\Verify;
 
 header('content-type:text/html;charset=utf-8');
 
-include  './vendor/autoload.php';
+$verify = new Verify();
 
-$var  = (new Verify)->isValidEmail('w2011344@qq.com');
-
-die(var_dump($var));  //测试一下
+$result = $verify->isValidEmail('1223@qq.com');
+var_dump($result);
